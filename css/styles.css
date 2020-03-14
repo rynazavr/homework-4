@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0 auto;
+  padding: 0;
+}
+.container {
+  width: 1170px;
+  padding: 0px 15px 0px 15px;
+  margin: 0 auto;
+}
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/**NAVIGATION - MENU+LOGO**/
+header {
+  margin: 45px 0px 110px 0px;
+}
+
+/**LOGO**/
+.logo a {
+  text-decoration: none;
+  font-size: 30px;
+  color: #0f0101;
+  text-transform: uppercase;
+  line-height: 23px;
+  letter-spacing: -0.02;
+  float: left;
+}
+.logo a::first-letter {
+  color: #1abc9c;
+  font-weight: 700;
+}
+/**MENU**/
+.menu-list {
+  list-style: none;
+  width: 570px;
+  float: right;
+}
+.menu-list li {
+  float: right;
+}
+.menu-list li:not(:first-child) {
+  margin-right: 35px;
+}
+.menu-list a {
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 24px;
+  color: #0f0101;
+}
+
+.menu-list a:hover {
+  color: #1abc9c;
+}
+
+.header-featured-list,
+.header-latest-news {
+  font-size: 48px;
+  font-family: "Roboto";
+  color: #515151;
+  text-transform: uppercase;
+  line-height: 32px;
+  letter-spacing: -0.02;
+  float: left;
+  position: relative;
+  left: 30%;
+}
+h2::after {
+  display: block;
+  width: 164px;
+  height: 7px;
+  background-color: #1abc9c;
+  margin: 0 auto;
+  content: "";
+  margin-top: 32px;
+  margin-bottom: 92px;
+}
+
+.featured-items-list {
+  width: 1170;
+  float: left;
+  padding: 0px;
+  margin-bottom: 105px;
+}
+/**FEATURED LIST BLOCK**/
+/**festured list LI**/
+.featured-item {
+  list-style: none;
+  float: left;
+  width: 255px;
+  padding: 0px 30px 30px 0px;
+}
+.featured-item:nth-last-child(-n + 4) {
+  padding-bottom: 0px;
+}
+.featured-item:nth-child(-4n) {
+  margin-right: 0px;
+}
+.featured-item a {
+  /*margin: 0, auto;*/
+  text-decoration: none;
+  /* padding: 0px;*/
+}
+/**festured list product name+price UL**/
+.n-specifications {
+  background-color: #323232;
+  text-decoration: none;
+  width: 255px;
+  height: 40px;
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 32px;
+  letter-spacing: -0.02;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+}
+/**festured list product name LI**/
+.n-item {
+  width: 186px;
+  height: 26px;
+  text-decoration: none;
+  margin: 0;
+  float: left;
+  padding: 5px 0px 9px 14px;
+}
+/**festured list product price LI**/
+.n-price {
+  background-color: rgba(230, 230, 235, 0.5);
+  text-decoration: none;
+  width: 55px;
+  height: 26px;
+  float: right;
+  margin: 0px;
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 9px;
+}
+/*featured-item-hover*/
+.featured-item:hover .n-specifications {
+  background-color: #1abc9c;
+}
+
+/**LATEST NEWS BLOCK**/
+/**latest news UL**/
+.latest-news-items-list {
+  width: 1170;
+  float: left;
+  padding: 0px;
+  margin: 0, auto;
+  font-family: "Open Sans", sans-serif;
+}
+/**latest news LI**/
+.latest-news-item {
+  list-style: none;
+  float: left;
+  width: 350px;
+  padding: 0px 30px 45px 0px;
+}
+.latest-news-item:nth-child(-3n) {
+  margin-right: 0px;
+}
+/**latest news title**/
+.latest-news-header-item {
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  color: #555252;
+  letter-spacing: -0.02;
+}
+.latest-news-header-item::after {
+  display: block;
+  width: 136px;
+  height: 3px;
+  background-color: #1abc9c;
+  margin: 0;
+  content: "";
+  margin-top: 11px;
+  margin-bottom: 27px;
+}
+/**latest news content**/
+.latest-news-content {
+  font-size: 14px;
+  font-weight: 400;
+  color: #555252;
+  line-height: 26px;
+  letter-spacing: -0.02;
+  margin-bottom: 14px;
+}
+/**latest news button learn more**/
+.button-news {
+  background-color: #1abc9c;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02;
+  width: 159px;
+  height: 51px;
+}
