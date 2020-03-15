@@ -1,3 +1,6 @@
+html {
+  box-sizing: border-box;
+}
 * {
   margin: 0;
   padding: 0;
@@ -8,14 +11,17 @@ body {
   padding: 0;
 }
 .container {
-  width: 1170px;
-  padding: 0px 15px 0px 15px;
+  width: 1140px;
+  padding: 0;
   margin: 0 auto;
 }
 img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+.news-image {
+  margin-bottom: 15px;
 }
 .clearfix::after {
   content: "";
@@ -24,11 +30,11 @@ img {
 }
 /**NAVIGATION - MENU+LOGO**/
 header {
-  margin: 45px 0px 110px 0px;
+  padding: 45px 0px 110px 0px;
 }
 
 /**LOGO**/
-.logo a {
+.logo {
   text-decoration: none;
   font-size: 30px;
   color: #0f0101;
@@ -37,20 +43,20 @@ header {
   letter-spacing: -0.02;
   float: left;
 }
-.logo a::first-letter {
+.logo::first-letter {
   color: #1abc9c;
   font-weight: 700;
 }
 /**MENU**/
 .menu-list {
   list-style: none;
-  width: 570px;
+  min-width: 570px;
   float: right;
 }
 .menu-list li {
-  float: right;
+  float: left;
 }
-.menu-list li:not(:first-child) {
+.menu-list li:not(:last-child) {
   margin-right: 35px;
 }
 .menu-list a {
@@ -64,8 +70,7 @@ header {
   color: #1abc9c;
 }
 
-.header-featured-list,
-.header-latest-news {
+h2 {
   font-size: 48px;
   font-family: "Roboto";
   color: #515151;
@@ -73,8 +78,9 @@ header {
   line-height: 32px;
   letter-spacing: -0.02;
   float: left;
-  position: relative;
-  left: 30%;
+  text-align: center;
+  /*position: relative;
+  left: 30%;*/
 }
 h2::after {
   display: block;
@@ -87,22 +93,25 @@ h2::after {
   margin-bottom: 92px;
 }
 
+/**FEATURED LIST BLOCK**/
+.section-featured-list {
+  padding-bottom: 105px;
+}
 .featured-items-list {
   width: 1170;
   float: left;
   padding: 0px;
-  margin-bottom: 105px;
+  margin: 0 auto;
 }
-/**FEATURED LIST BLOCK**/
 /**festured list LI**/
 .featured-item {
   list-style: none;
   float: left;
   width: 255px;
-  padding: 0px 30px 30px 0px;
+  margin: 0px 30px 30px 0px;
 }
 .featured-item:nth-last-child(-n + 4) {
-  padding-bottom: 0px;
+  margin-bottom: 0px;
 }
 .featured-item:nth-child(-4n) {
   margin-right: 0px;
@@ -155,9 +164,12 @@ h2::after {
 }
 
 /**LATEST NEWS BLOCK**/
+.latest-news-section {
+  padding-bottom: 45px;
+}
 /**latest news UL**/
 .latest-news-items-list {
-  width: 1170;
+  width: 1140;
   float: left;
   padding: 0px;
   margin: 0, auto;
@@ -168,7 +180,7 @@ h2::after {
   list-style: none;
   float: left;
   width: 350px;
-  padding: 0px 30px 45px 0px;
+  margin: 0px 30px 45px 0px;
 }
 .latest-news-item:nth-child(-3n) {
   margin-right: 0px;
@@ -201,7 +213,7 @@ h2::after {
   margin-bottom: 14px;
 }
 /**latest news button learn more**/
-.button-news {
+/**.button-news {
   background-color: #1abc9c;
   border: none;
   color: #ffffff;
@@ -216,4 +228,22 @@ h2::after {
   letter-spacing: -0.02;
   width: 159px;
   height: 51px;
+}**/
+.read-more-button {
+  background-color: #1abc9c;
+  color: #ffffff;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  text-transform: capitalize;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  letter-spacing: -0.02;
+  width: 159px;
+  height: 21px;
+  margin: 0;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
