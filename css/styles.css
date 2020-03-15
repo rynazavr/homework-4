@@ -64,6 +64,7 @@ header {
   text-decoration: none;
   line-height: 24px;
   color: #0f0101;
+  display: block;
 }
 
 .menu-list a:hover {
@@ -77,10 +78,7 @@ h2 {
   text-transform: uppercase;
   line-height: 32px;
   letter-spacing: -0.02;
-  /**float: left;**/
   text-align: center;
-  /*position: relative;
-  left: 30%;*/
   margin-bottom: 92px;
 }
 h2::after {
@@ -91,7 +89,6 @@ h2::after {
   margin: 0 auto;
   content: "";
   margin-top: 32px;
-  /**margin-bottom: 92px;**/
 }
 
 /**FEATURED LIST BLOCK**/
@@ -122,9 +119,7 @@ h2::after {
   margin-right: 0px;
 }
 .featured-item a {
-  /*margin: 0, auto;*/
   text-decoration: none;
-  /* padding: 0px;*/
 }
 /**festured list product name+price UL**/
 .n-specifications {
@@ -185,7 +180,7 @@ h2::after {
   list-style: none;
   float: left;
   width: 350px;
-  margin: 0px 30px 45px 0px;
+  margin: 0px 30px 0px 0px;
 }
 .latest-news-item:nth-child(-3n) {
   margin-right: 0px;
@@ -216,24 +211,8 @@ h2::after {
   color: #555252;
   line-height: 26px;
   letter-spacing: -0.02;
+  margin-bottom: 15px;
 }
-/**latest news button learn more**/
-/**.button-news {
-  background-color: #1abc9c;
-  border: none;
-  color: #ffffff;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  text-transform: capitalize;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 26px;
-  letter-spacing: -0.02;
-  width: 159px;
-  height: 51px;
-}**/
 .read-more-button {
   background-color: #1abc9c;
   color: #ffffff;
