@@ -98,6 +98,10 @@ h2::after {
 .section-featured-list {
   padding-bottom: 105px;
 }
+.menu-list {
+  margin: 0;
+  padding: 0;
+}
 .featured-items-list {
   width: 1170;
   float: left;
