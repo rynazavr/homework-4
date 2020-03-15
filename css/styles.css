@@ -197,6 +197,7 @@ h2::after {
   font-weight: 600;
   color: #555252;
   letter-spacing: -0.02;
+  margin-bottom: 14px;
 }
 .latest-news-header-item::after {
   display: block;
@@ -215,7 +216,6 @@ h2::after {
   color: #555252;
   line-height: 26px;
   letter-spacing: -0.02;
-  margin-bottom: 14px;
 }
 /**latest news button learn more**/
 /**.button-news {
