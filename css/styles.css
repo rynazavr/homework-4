@@ -231,3 +231,6 @@ h2::after {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.read-more-button:hover {
+  box-shadow: 0 0 2px hsla(0, 0%, 0%, 0.5);
+}
