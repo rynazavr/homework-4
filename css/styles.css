@@ -230,3 +230,6 @@ h2::after {
   padding-top: 15px;
   padding-bottom: 15px;
 }
+.read-more:hover {
+  box-shadow: 0px 0px 2px 1px hsla(168, 76%, 42%, 0.5);
+}
